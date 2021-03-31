@@ -1,0 +1,53 @@
+<div class="container col-md-6">
+    <div class="card">
+        <div class="card-header">
+            <h3>Modificar Datos</h3>
+        </div>
+        <div class="card-body">
+           <form>
+                <div class="form-group">
+                    <label for="">nmid:</label>
+                    <input [(ngModel)]="persona.nmid" name="nmid" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_nmcliente:</label>
+                    <input [(ngModel)]="persona.cus_nmcliente" name="cus_nmcliente" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_dsnombres:</label>
+                    <input [(ngModel)]="persona.cus_dsnombres" name="cus_dsnombres" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_dsapellido:</label>
+                    <input [(ngModel)]="persona.cus_dsapellido" name="cus_dsapellido" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_dsdireccion:</label>
+                    <input [(ngModel)]="persona.cus_dsdireccion" name="cus_dsdireccion" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_dscorreo:</label>
+                    <input [(ngModel)]="persona.cus_dscorreo" name="cus_dscorreo" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_cdtelefono:</label>
+                    <input [(ngModel)]="persona.cus_cdtelefono" name="cus_cdtelefono" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_cdcelular:</label>
+                    <input [(ngModel)]="persona.cus_cdcelular" name="cus_cdcelular" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_nmcargo:</label>
+                    <input [(ngModel)]="persona.cus_nmcargo" name="nmcargo" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label for="">cus_dscargo:</label>
+                    <input [(ngModel)]="persona.cus_dscargo" name="dscargo" type="text" class="form-control">
+                </div>
+                <button (click)="Actualizar()" class="btn btn-danger">Actualizar</button>
+           </form>
+        </div>
+    </div>
+</div>
+<p>listar works!</p>

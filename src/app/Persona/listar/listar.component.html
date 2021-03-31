@@ -1,0 +1,42 @@
+<div class="container">
+    <div class="card">
+        <div class="card-header">
+            <h3>Personas</h3>
+        </div>
+        <div class="card-body">
+            <table class="table table-hover">
+                <thead>
+                    <tr>
+                        <th>cus_nmcliente</th>
+                        <th>cus_dsnombres</th>
+                        <th>cus_dsapellido</th>
+                        <th>cus_dsdireccion</th>
+                        <th>cus_dscorreo</th>
+                        <th>cus_cdtelefono</th>
+                        <th>cus_cdcelular</th>
+                        <th>cus_nmcargo</th>
+                        <th>cus_dscargo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr *ngFor="let persona of personas" class="text-center">
+                        <td>{{persona.cus_nmcliente}}</td>
+                        <td>{{persona.cus_dsnombres}}</td>
+                        <td>{{persona.cus_dsapellido}}</td>
+                        <td>{{persona.cus_dsdireccion}}</td>
+                        <td>{{persona.cus_dscorreo}}</td>
+                        <td>{{persona.cus_cdtelefono}}</td>
+                        <td>{{persona.cus_cdcelular}}</td>
+                        <td>{{persona.cus_nmcargo}}</td>
+                        <td>{{persona.cus_dscargo}}</td>
+                        <td>
+                            <button [routerLink]="['/edit', persona.nmid]" class="btn btn-warning">Editar</button>
+                            <button (click)='Borrar(persona)' class="btn btn-danger">Delete</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<p>listar works!</p>
